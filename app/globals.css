@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #101114;
+  --muted: #6b7079;
+  --subtle: #9a9ea6;
+  --line: #ececee;
+  --wash: #f7f7f8;
+  --brand: #101114;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-ink: var(--foreground);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-line: var(--line);
+  --color-wash: var(--wash);
+  --color-brand: var(--brand);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --radius-card: 20px;
+  --radius-control: 12px;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.006em;
+}
+
+button, a, input, select, textarea {
+  outline-color: var(--foreground);
+  outline-offset: 2px;
+}
+
+input[type="range"] {
+  accent-color: var(--foreground);
+}
+
+.prose-job p + p { margin-top: 0.85rem; }
