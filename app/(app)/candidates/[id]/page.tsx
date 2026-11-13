@@ -172,7 +172,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ id: 
               {events.map((event) => (
                 <li key={event.id} className="text-[13px]">
                   <p className="whitespace-pre-wrap leading-relaxed">{event.detail ?? event.kind}</p>
-                  <p className="mt-0.5 text-xs text-muted">{event.actor ?? "Hireflow"} · {formatDate(event.createdAt)}</p>
+                  <p className="mt-0.5 text-xs text-muted">{event.actor ?? "Filtrd"} · {formatDate(event.createdAt)}</p>
                 </li>
               ))}
             </ul>

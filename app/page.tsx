@@ -27,7 +27,7 @@ export default function Home() {
             From open role to shortlist, without the inbox.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
-            Hireflow gives every organization its own career site and automates resume screening, so your HR team starts with the right candidates.
+            Filtrd gives every organization its own career site and automates resume screening, so your HR team starts with the right candidates.
           </p>
           <div className="mt-9">
             <Link href="/signup" className={buttonClass("primary") + " !h-12 !px-6 !text-[15px]"}>
@@ -47,7 +47,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="py-12 text-center text-xs text-subtle">Hireflow</footer>
+      <footer className="py-12 text-center text-xs text-subtle">Filtrd</footer>
     </div>
   );
 }

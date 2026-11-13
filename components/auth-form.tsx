@@ -33,7 +33,7 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
         {isSignup ? "Create account" : "Sign in"}
       </SubmitButton>
       <p className="pt-1 text-center text-sm text-muted">
-        {isSignup ? "Already have an account? " : "New to Hireflow? "}
+        {isSignup ? "Already have an account? " : "New to Filtrd? "}
         <Link href={isSignup ? "/login" : "/signup"} className="font-medium text-ink hover:underline">
           {isSignup ? "Sign in" : "Create an account"}
         </Link>

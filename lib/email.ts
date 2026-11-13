@@ -15,7 +15,7 @@ export function layout(orgName: string, body: string) {
 <div style="max-width:640px;margin:0 auto;padding:32px 20px">
 <div style="font-size:14px;font-weight:600;margin-bottom:24px">${esc(orgName)}</div>
 <div style="border:1px solid #ececec;border-radius:20px;padding:28px;font-size:14px;line-height:1.6">${body}</div>
-<div style="font-size:12px;color:#8a8a8a;margin-top:20px">Sent by Hireflow on behalf of ${esc(orgName)}</div>
+<div style="font-size:12px;color:#8a8a8a;margin-top:20px">Sent by Filtrd on behalf of ${esc(orgName)}</div>
 </div></body></html>`;
 }
 
@@ -47,7 +47,7 @@ async function createTransport() {
 /** Delivers queued mail for one tenant. Without SMTP it's marked captured and stays viewable in the app. */
 export async function flushEmails(orgId: string) {
   const transport = await createTransport();
-  const from = process.env.MAIL_FROM || "Hireflow <no-reply@example.com>";
+  const from = process.env.MAIL_FROM || "Filtrd <no-reply@example.com>";
 
   for (;;) {
     const more = await withTenant(orgId, async (tx) => {

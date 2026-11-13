@@ -6,7 +6,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "Hireflow", template: "%s · Hireflow" },
+  title: { default: "Filtrd", template: "%s · Filtrd" },
   description: "Career sites and automated hiring for every organization.",
 };
 

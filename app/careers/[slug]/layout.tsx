@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { LogoMark } from "@/components/logo";
 import { careerBase, getPublicOrg } from "@/lib/careers";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -32,7 +33,9 @@ export default async function CareerLayout({ children, params }: { children: Rea
         )}
       </header>
       <main className="mx-auto w-full max-w-3xl flex-1 px-4 pb-16 sm:px-6">{children}</main>
-      <footer className="py-8 text-center text-xs text-subtle">Powered by Hireflow</footer>
+      <footer className="flex items-center justify-center gap-1.5 py-8 text-xs text-subtle">
+        Powered by <LogoMark size={13} /> Filtrd
+      </footer>
     </div>
   );
 }

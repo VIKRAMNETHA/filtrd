@@ -22,7 +22,7 @@ export default async function EmailsPage() {
 
   return (
     <>
-      <PageHeader title="Emails" description="Everything Hireflow has sent for your organization." />
+      <PageHeader title="Emails" description="Everything Filtrd has sent for your organization." />
       {!smtp && (
         <p className="mb-5 rounded-control bg-amber-50 px-4 py-3 text-[13px] leading-relaxed text-amber-800">
           Email delivery isn&apos;t set up yet, so messages are kept here and not delivered. Set SMTP_HOST to start sending.

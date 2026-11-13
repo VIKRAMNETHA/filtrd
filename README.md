@@ -1,4 +1,4 @@
-# Hireflow
+# Filtrd
 
 Multi-tenant applicant tracking system. Each organization onboards, gets its own career site at `<slug>.<ROOT_DOMAIN>`, publishes roles with a shortlist score, active days and hiring rounds, and HR receives the shortlist by email when a role closes.
 
